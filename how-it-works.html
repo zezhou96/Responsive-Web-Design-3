@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is the content that a search engine will display when returning results.">
+    <title>DMIT 1530 Assignment 3 How it works</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    <symbol id="icon-checkmark" viewBox="0 0 100 100">
+    <path fill="#477663" style="fill: var(--color1, #477663)" d="M13.147 24c-0.384-0.001-0.73-0.165-0.973-0.426l-0.001-0.001-6.48-6.893c-0.224-0.238-0.361-0.56-0.361-0.913 0-0.737 0.598-1.335 1.335-1.335 0.383 0 0.729 0.162 0.973 0.421l0.001 0.001 5.493 5.853 11.213-12.267c0.246-0.305 0.62-0.498 1.040-0.498 0.736 0 1.333 0.597 1.333 1.333 0 0.373-0.153 0.71-0.399 0.952l-0 0-12.187 13.333c-0.241 0.267-0.587 0.435-0.972 0.44h-0.001z"></path>
+    </symbol>
+    </defs>
+    </svg>
+
+    <header>
+        <h1 class="visuallyhidden">Header</h1>
+        <div class="header-flex">
+            <a href="index.html"><img src="img/Images-use/logo-squoosh.jpg" alt="Logo"></a>
+            <button class="toggle-btn">
+                 <svg viewBox="0 0 100 80" width="30" height="40">
+                    <rect width="100" height="10" rx="8"></rect>
+                    <rect y="30" width="100" height="10" rx="8"></rect>
+                    <rect y="60" width="100" height="10" rx="8"></rect>
+                </svg>
+            </button>
+        </div>
+        <div class="dropdown-menu">
+            <h2 class="visuallyhidden">Navigation</h2>
+            <nav>
+                <h3 class="visuallyhidden">Navigation Menu</h3>
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">How it Works</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="visuallyhidden">Main</h1>
+        <div class="how-it-works">
+            <h2>How it works.</h2>
+            <div class="how-it-works-steps">
+                <div class="outer-steps">                                  
+                    <div>
+                        <h3>Step 1</h3>
+                        <p>Tell us a little about your project and requirements.</p>
+                    </div>
+                    <div>
+                        <h3>Step 2</h3>
+                        <p>Let us craft out a plan for your specific needs.</p>
+                    </div>
+                </div>
+                <div class="outer-steps">
+                    <div>
+                        <h3>Step 3</h3>
+                        <p>Let us assemble a team that best supports your needs.</p>
+                    </div>
+                    <div>
+                        <h3>Step 4</h3>
+                        <p>Build innovative solutions to advance your business.</p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="fillout-form">
+            <div class="parallax-image">
+                <h2>Project form.</h2>
+            </div>
+            <form action="#" method="post" id="how-it-works-form">
+                <fieldset>
+                    <div class="form-paragraphs">
+                        <p>Fill out the fields below and describe your needs.</p>
+                        <p>*Required Field</p>
+                    </div>                   
+                    <div class="fillout-form-inputs">
+                        <div>
+                            <label for="name">Name/Surname<span>*</span></label>
+                            <input type="text" id="name" required autocomplete="on">
+                        </div>
+                        <div>
+                            <label for="company">Company<span>*</span></label>
+                            <input type="text" id="company" required autocomplete="on">
+                        </div>
+                        <div>
+                            <label for="phone">Tel<span>*</span></label>
+                            <input type="text" id="phone" required autocomplete="on" pattern="[1-9][0-9]{2}[0-9]{3}[0-9]{4}">
+                        </div>
+                        <div>
+                            <label for="city">City</label>
+                            <input type="text" id="city">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="text" id="email" autocomplete="on" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        </div>
+                        <div>
+                            <label for="website">Website Url</label>
+                            <input type="url" id="website" autocomplete="off" pattern="https?://.+">
+                        </div>
+                        <div>
+                            <label for="budget">Budget</label>
+                            <input type="number" id="budget" placeholder="$3,000 - $6,000" min="1000" max="6000" step="1000">
+                        </div>
+                        <div>
+                            <label for="description">Project Description</label>
+                            <textarea id="description" placeholder="In 250 words or less." maxlength="250"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit"><img src="img/Images-use/right-arrow-tiny.png" alt="Right Arrow">Send.</button>
+                        </div>                        
+                    </div>
+                </fieldset>
+            </form>
+        </div>        
+    </main>
+    <footer>
+        <h1 class="visuallyhidden">Footer</h1>
+        <div class="footer-top">
+            <a href="index.html"><img src="img/Images-use/logo-squoosh.jpg" alt="Logo"></a>
+            <div class="footer-nav">
+                <nav>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Clients</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Our Talents</a></li>
+                        <li><a href="#">Tour</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav-intouch">
+                    <h4>Get in Touch</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Press & Media</a></li>
+                        <li><a href="#">hello@upchanges.ca</a></li>
+                    </ul>
+                </nav>
+            </div> 
+        </div>      
+        <div class="footer-copyright">
+            <p>Copyright &copy; 2020</p>
+            <p>For Educational Purposes Only</p>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
